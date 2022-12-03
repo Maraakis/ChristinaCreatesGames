@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+/// <summary>
 // Link System Tutorial 1: Showing a tooltip by clicking on text in a Text Mesh Pro textbox
 // Video tutorial: https://youtu.be/N6vYyCahLr8
 
@@ -13,6 +14,9 @@ using UnityEngine.EventSystems;
 // Please watch the video if you have questions about how to set this up :)
 // Hope you'll enjoy my system!
 // - Christina
+/// </summary>
+
+
 
 namespace ChristinaCreatesGames.Typography.TooltipForTMPbyClick
 {
