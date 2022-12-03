@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Christina.Typography.ShowButtonPrompt
+namespace ChristinaCreatesGames.Typography.ShowButtonPrompt
 {
     [RequireComponent(typeof(TMP_Text))]
     public class SetTextToTextBox : MonoBehaviour
