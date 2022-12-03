@@ -50,7 +50,6 @@ namespace ChristinaCreatesGames.Typography.TooltipForTMPbyClick
                 
                 Debug.Log(linkInfo.GetLinkID());
                 OnClickedOnLinkEvent?.Invoke(linkInfo.GetLinkText());
-                Debug.Log("Send");
             }
         }
     }
