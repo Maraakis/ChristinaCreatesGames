@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Christina.Typography.ShowButtonPrompt
+namespace ChristinaCreatesGames.Typography.ShowButtonPrompt
 {
     [CreateAssetMenu(fileName = "List of Sprite Assets", 
         menuName = "List of Sprite Assets", order = 0)]
