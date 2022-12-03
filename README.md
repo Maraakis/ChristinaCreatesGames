@@ -1,4 +1,4 @@
-# ChristinaCreatesGames
+# Christina Creates Games tutorial video scripts
 
 Hi!
 I'm Christina :)
