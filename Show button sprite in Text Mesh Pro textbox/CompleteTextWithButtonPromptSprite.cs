@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Christina.Typography.ShowButtonPrompt
+namespace ChristinaCreatesGames.Typography.ShowButtonPrompt
 {
     public static class CompleteTextWithButtonPromptSprite
     {
