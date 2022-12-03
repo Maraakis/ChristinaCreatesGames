@@ -48,7 +48,6 @@ namespace ChristinaCreatesGames.Typography.TooltipForTMPbyClick
             {
                 TMP_LinkInfo linkInfo = _tmpTextBox.textInfo.linkInfo[linkTaggedText];
                 
-                Debug.Log(linkInfo.GetLinkID());
                 OnClickedOnLinkEvent?.Invoke(linkInfo.GetLinkText());
             }
         }
