@@ -3,6 +3,8 @@
 Hi!
 I'm Christina :)
 
+I'm a designer and teacher from Germany and create Unity tutorials focusing on design topics.
+
 I'll be posting my scripts from different tutorials I published on Youtube here. 
 https://www.youtube.com/@christinacreatesgames
 
