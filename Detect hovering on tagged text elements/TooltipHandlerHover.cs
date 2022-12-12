@@ -1,9 +1,14 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 namespace ChristinaCreatesGames.Typography.TooltipForTMP
 {
+
+    /// <summary>
+    /// This class is used to handle the display of tooltips in your Unity project.
+    /// It should be placed on the canvas your Tooltip is located on.
+    /// </summary>
     public class TooltipHandlerHover : MonoBehaviour
     {
         [SerializeField] private List<TooltipInfos> tooltipContentList;
@@ -36,7 +41,7 @@ namespace ChristinaCreatesGames.Typography.TooltipForTMP
                 {
                     if (!tooltipContainer.gameObject.activeInHierarchy)
                     {
-                        tooltipContainer.transform.position = mousePos +  new Vector3(0, 350, 0);
+                        tooltipContainer.transform.position = mousePos +  new Vector3(0, 350, 0); // This offset is an example, you'll probably need to find your own best fitting value.
                         tooltipContainer.gameObject.SetActive(true);
                     }
                     
