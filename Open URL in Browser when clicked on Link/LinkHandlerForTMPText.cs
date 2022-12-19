@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 namespace ChristinaCreatesGames.Typography.InteractingWithText
 {
     [RequireComponent(typeof(TMP_Text))]
-    public class LinkHandlerForTMPText : MonoBehaviour, IPointerClickHandler
+    public class LinkHandlerForTMPTextWithURLClickability : MonoBehaviour, IPointerClickHandler
     {
         private TMP_Text _tmpTextBox;
         private Canvas _canvasToCheck;
