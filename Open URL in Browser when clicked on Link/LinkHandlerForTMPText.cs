@@ -43,7 +43,7 @@ namespace ChristinaCreatesGames.Typography.InteractingWithText
                 return;
             }
 
-            OnClickedOnLinkEvent?.Invoke(linkInfo.GetLinkText());
+            ClickedOnLink?.Invoke(linkInfo.GetLinkText());
         }
     }
 }
