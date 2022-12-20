@@ -12,7 +12,7 @@ namespace ChristinaCreatesGames.Typography.InteractingWithText
         private Canvas _canvasToCheck;
         private Camera _cameraToUse;
         
-        public static event Action<string> OnClickedOnLinkEvent;
+        public static event Action<string> ClickedOnLink;
 
         private void Awake()
         {
@@ -37,7 +37,7 @@ namespace ChristinaCreatesGames.Typography.InteractingWithText
             TMP_LinkInfo linkInfo = _tmpTextBox.textInfo.linkInfo[linkTaggedText];
             
             string linkID = linkInfo.GetLinkID();
-            if (linkID.Contains("www"))
+            if (linkID.StartsWith("http://") || linkID.StartsWith("https://"))
             {
                 Application.OpenURL(linkID);
                 return;
