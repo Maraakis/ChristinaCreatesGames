@@ -85,24 +85,21 @@ namespace ChristinaCreatesGames.Typography.Typewriter
          #endregion
 
          private void PrepareForNewText(Object obj)
-        {
-            if (!_readyForNewText)
-            {
-                Debug.Log("Not ready yet");
-                return;
-            }
+         {
+             if (obj != _textBox || !_readyForNewText || _textBox.maxVisibleCharacters >= _textBox.textInfo.characterCount)
+                 return;
+             
+             CurrentlySkipping = false;
+             _readyForNewText = false;
             
-            _readyForNewText = false;
+             if (_typewriterCoroutine != null)
+                 StopCoroutine(_typewriterCoroutine);
             
-            if (_typewriterCoroutine != null)
-                StopCoroutine(_typewriterCoroutine);
+             _textBox.maxVisibleCharacters = 0;
+             _currentVisibleCharacterIndex = 0;
 
-            
-            _textBox.maxVisibleCharacters = 0;
-            _currentVisibleCharacterIndex = 0;
-
-            _typewriterCoroutine = StartCoroutine(Typewriter());
-        }
+             _typewriterCoroutine = StartCoroutine(Typewriter());
+         }
 
         private IEnumerator Typewriter()
         {
@@ -112,7 +109,7 @@ namespace ChristinaCreatesGames.Typography.Typewriter
             {
                 var lastCharacterIndex = textInfo.characterCount - 1;
 
-                if (_currentVisibleCharacterIndex == lastCharacterIndex)
+                if (_currentVisibleCharacterIndex >= lastCharacterIndex)
                 {
                     _textBox.maxVisibleCharacters++;
                     yield return _textboxFullEventDelay;
