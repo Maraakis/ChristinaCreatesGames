@@ -3,6 +3,8 @@ using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 
+namespace ChristinaCreatesGames.Typography.FontSizes
+{
 [RequireComponent(typeof(TMP_Text))]
 public class NextPage : MonoBehaviour
 {
@@ -43,4 +45,5 @@ public class NextPage : MonoBehaviour
             _textBox.pageToDisplay = 1;
         }
     }
+}
 }
