@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace ChristinaCreatesGames.Typography.FontSizes
+{
 [RequireComponent(typeof(Image))]
 public class ShowNextPageButton : MonoBehaviour
 {
@@ -23,4 +25,5 @@ public class ShowNextPageButton : MonoBehaviour
                 _buttonImage.enabled = false;
         }
     }
+}
 }
