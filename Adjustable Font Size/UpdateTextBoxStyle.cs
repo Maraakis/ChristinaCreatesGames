@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 
+namespace ChristinaCreatesGames.Typography.FontSizes
 [RequireComponent(typeof(TMP_Text))]
 public class UpdateTextBoxStyle : MonoBehaviour
 {
@@ -35,4 +36,5 @@ public class UpdateTextBoxStyle : MonoBehaviour
         
         Debug.Log($"Text needs {_textBox.textInfo.pageCount} pages to display. Current page is {_textBox.pageToDisplay}");
     }
+}
 }
