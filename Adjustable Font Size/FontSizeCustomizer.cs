@@ -4,6 +4,8 @@ using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 
+namespace ChristinaCreatesGames.Typography.FontSizes
+{
 public class FontSizeCustomizer : MonoBehaviour
 {
     private TMP_StyleSheet _styleSheet => TMP_Settings.defaultStyleSheet;
@@ -36,4 +38,5 @@ public class FontSizeCustomizer : MonoBehaviour
         
         UpdatedTheTextStyle?.Invoke(styleName);
     }
+}
 }
