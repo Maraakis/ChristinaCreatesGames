@@ -27,13 +27,13 @@ public class Quest : MonoBehaviour
         {
             if (steps[i].isCompleted)
             {
-                sb.Append("<style=\"checked\">");
+                sb.Append("<style=\"checked\">"); // Your style needs to be called "checked" to work with this.
                 sb.Append(steps[i].description);
                 sb.Append("</style>\n");
             }
             else
             {
-                sb.Append("<style=\"unchecked\">");
+                sb.Append("<style=\"unchecked\">"); // Your style needs to be called "unchecked" to work with this.
                 sb.Append(steps[i].description);
                 sb.Append("</style>\n");
             }
