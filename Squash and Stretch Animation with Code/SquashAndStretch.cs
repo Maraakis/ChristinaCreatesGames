@@ -119,7 +119,7 @@ namespace ChristinaCreatesGames.Animations
            {
                StopCoroutine(_squashAndStretchCoroutine);
                if (playsEveryTime && resetToInitialScaleAfterAnimation)
-                   transform.localScale = _initialScaleVector;
+                   transformToAffect.localScale = _initialScaleVector;
            }
 
             _squashAndStretchCoroutine = StartCoroutine(SquashAndStretchEffect());
