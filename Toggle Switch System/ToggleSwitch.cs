@@ -32,7 +32,7 @@ namespace Christina.UI
         
         protected Action transitionEffect;
         
-        protected void OnValidate()
+        protected virtual void OnValidate()
         {
             SetupToggleComponents();
 
