@@ -21,7 +21,7 @@ namespace Christina.UI
         private bool _isBackgroundMaterialNotNull;
         private bool _isHandleMaterialNotNull;
 
-        private new void OnValidate()
+        protected override void OnValidate()
         {
             base.OnValidate();
             
