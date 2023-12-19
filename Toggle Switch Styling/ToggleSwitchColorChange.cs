@@ -23,7 +23,7 @@ namespace Christina.UI
         private bool _isBackgroundImageNotNull;
         private bool _isHandleImageNotNull;
         
-        private new void OnValidate()
+        protected override void OnValidate()
         {
             base.OnValidate();
             
