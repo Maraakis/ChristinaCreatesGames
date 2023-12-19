@@ -72,7 +72,7 @@ namespace Christina.UI
 
         protected virtual void Awake()
         {
-            SetupToggleComponents();
+            SetupSliderComponent();
         }
 
         public void OnPointerClick(PointerEventData eventData)
@@ -140,7 +140,3 @@ namespace Christina.UI
         }
     }
 }
-
-
-
-
