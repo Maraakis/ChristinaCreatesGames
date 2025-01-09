@@ -39,7 +39,9 @@ namespace Christina.UI
 
         private void Start()
         {
-            buttonBackground.color = Color.clear;
+            Color alphaHoverColor = hoverColor;
+            alphaHoverColor.a = 0f;
+            buttonBackground.color = alphaHoverColor;
         }
 
         public void OnPointerEnter(PointerEventData eventData)
