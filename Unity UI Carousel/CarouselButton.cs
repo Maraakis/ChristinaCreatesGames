@@ -39,9 +39,7 @@ namespace Christina.UI
 
         private void Start()
         {
-            Color alphaHoverColor = hoverColor;
-            alphaHoverColor.a = 0f;
-            buttonBackground.color = alphaHoverColor;
+            buttonBackground.color = Color.clear;
         }
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -68,7 +66,7 @@ namespace Christina.UI
             {
                 time += Time.deltaTime;
                 float lerpValue = time / duration;
-                Color newColor = buttonBackground.color;
+                Color newColor = hoverColor;
                 newColor.a = Mathf.Lerp(startAlpha, targetAlpha, lerpValue);
                 buttonBackground.color = newColor;
                 yield return null;
