@@ -66,7 +66,7 @@ namespace Christina.UI
             {
                 time += Time.deltaTime;
                 float lerpValue = time / duration;
-                Color newColor = buttonBackground.color;
+                Color newColor = hoverColor;
                 newColor.a = Mathf.Lerp(startAlpha, targetAlpha, lerpValue);
                 buttonBackground.color = newColor;
                 yield return null;
